@@ -2,7 +2,7 @@
     $text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officiis repellat ad doloribus accusantium libero asperiores, et quo. Itaque architecto reiciendis enim ex et. Recusandae necessitatibus soluta corporis veritatis provident.";
     $censure = $_GET["censure"];
 
-    $text = str_replace($censure, '***' ,$text);
+    $text = str_replace(strtolower($censure), '***' ,strtolower($text));
 ?>
 
 <!DOCTYPE html>
